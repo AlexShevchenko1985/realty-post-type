@@ -1,0 +1,1 @@
+<?php echo __('No Articles', 'tbc');
