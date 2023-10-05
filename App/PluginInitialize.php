@@ -37,10 +37,11 @@ final class PluginInitialize extends Singleton
         add_filter('archive_template', [$this, 'loadRealtyArchiveTemplate']);
         //RealtyShortcode
         add_shortcode('realty_filer', [RealtyShortcode::class, 'realtyFiler']);
+        //Realty widget area
+        add_action( 'widgets_init', [RealtyWidget::class, 'init'] );
 
         $this->postTypeSetup();
         $this->ajax();
-
     }
 
     public function themeSetup(): void

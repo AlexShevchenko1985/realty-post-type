@@ -9,8 +9,10 @@ global $wp_query;
                     <h2 class="insights_top_title title-1"><?php echo __('Realty', 'tbc'); ?></h2>
                     <div class="insights_top_categories_cont">
 
-                           <?php echo do_shortcode('[realty_filer]')?>
-
+                        <?php
+                        if (function_exists('dynamic_sidebar')) {
+                            dynamic_sidebar('widget-realty-archive');
+                        } ?>
 
                         <div class="item-realty-wrap">
                             <div id="realty-block-content" class="archive_insights_and_subscribe desktop">

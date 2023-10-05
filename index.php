@@ -32,3 +32,5 @@ define('RPT_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 use App\PluginInitialize;
 $theme = PluginInitialize::getInstance();
+
+include_once RPT_PLUGIN_PATH . "acf/field_group.php";
