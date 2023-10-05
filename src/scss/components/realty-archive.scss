@@ -1,0 +1,502 @@
+.tbc-realty-archive {
+
+  .insights_main_cont {
+    .insights_top_title {
+      margin-top: 0;
+      color: $black;
+    }
+  }
+
+  .categories_p {
+    float: left;
+    padding: 0.4em 0;
+    color: $black;
+
+    @media screen and (max-width: 580px) {
+      float: none;
+    }
+  }
+
+  .insights_categories_cont {
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    @include media(xmsd) {
+      margin-bottom: 70px;
+    }
+
+    a {
+      float: left;
+      color: $black-light;
+      padding: 0.4em 1em;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .insights_categories_cont a,
+  .categories_p {
+    margin: 5px;
+
+    @include media(xmsd) {
+      margin: 0.6em 1.25em 0.6em 0;
+    }
+  }
+
+  .first_archive_insight {
+    margin-bottom: 120px;
+  }
+
+  .archive_insight_image_cont {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+
+    img {
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: initial;
+      max-height: initial;
+      width: 100%;
+      height: 100%;
+    }
+
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+
+  .first_archive_insight {
+    .archive_insight_image_cont {
+      height: 460px;
+    }
+  }
+
+  .archive_insights_and_subscribe.mobile {
+    .archive_insight_image_cont {
+      height: 216px;
+    }
+
+    .first_archive_insight {
+      .archive_insight_image_cont {
+        height: 246px;
+
+        @media screen and (max-width: 520px) {
+          height: 216px;
+        }
+      }
+    }
+  }
+
+  .resource_type_sticker {
+    background: $gold-dark;
+    color: $white;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    padding: 5px 1em;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
+
+    i {
+      font-size: 20px;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  body .footer .arrow-up {
+    z-index: 10;
+  }
+
+  .archive_insights_and_subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media screen and (max-width: 980px) {
+      justify-content: space-between;
+    }
+
+    .archive_insight_cont {
+      flex: 0 0 32%;
+      margin-right: 10px;
+      align-self: flex-start;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      &.first_archive_insight {
+        flex-basis: 100%;
+      }
+
+      @media screen and (max-width: 980px) {
+        margin-right: 0;
+      }
+      .desc {
+        font-size: 12px;
+       p {
+         margin: 2px;
+         padding: 2px;
+       }
+      }
+    }
+
+    &.mobile {
+      .archive_insight_cont {
+        flex: 0 0 48%;
+        align-self: baseline;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        &.first_archive_insight {
+          flex-basis: 100%;
+        }
+
+        @media screen and (max-width: 520px) {
+          flex: 0 0 100%;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .insights_main_cont {
+    nav.pagination {
+      /*margin-top: 10px;*/
+
+      h2.screen-reader-text {
+        margin: 0;
+      }
+    }
+  }
+
+  .archive_insight_cont {
+    a {
+      display: table;
+
+      &:hover {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    .archive_insight_title {
+      display: table;
+      color: $black;
+      margin: 0;
+      max-width: 630px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
+    .archive_insight_publish_date {
+      display: table;
+      margin-top: 20px;
+      margin-bottom: 5px;
+
+    }
+  }
+
+  .archive_insight_publish_date {
+    color: $gray;
+    margin-bottom: 0;
+  }
+
+  .archive_insights_and_subscribe {
+    + .insights_subscribe_main_container {
+      padding: 100px 0;
+      //background: $gray-white url('../images/svg/bg_lines.svg') left bottom no-repeat;
+      background: white;
+      border-top: 1px solid $gray-light;
+      border-bottom: 1px solid $gray-light;
+      background-size: auto 100%;
+      margin-bottom: 120px;
+      margin-top: 40px;
+
+      margin-left: calc(-100vw / 2 + 100% / 2);
+      margin-right: calc(-100vw / 2 + 100% / 2);
+
+      @media screen and (max-width: 1080px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1080px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        @include media(xmsd) {
+          align-items: center;
+        }
+      }
+
+      .insights_subscribe_p {
+        display: inline-block;
+        margin: 0 1em;
+        max-width: 10em;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $black;
+
+
+        @include media(xmsd) {
+          text-align: center;
+          margin: 20px 0 0;
+        }
+      }
+    }
+
+    &.mobile + .insights_subscribe_main_container {
+      margin-bottom: 80px;
+      margin-top: 20px;
+    }
+  }
+
+  .insights_subscribe_img_text {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+
+    @media screen and (max-width: 1080px) {
+      margin-bottom: 40px;
+    }
+
+    @include media(xmsd) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 380px) {
+      flex-direction: column;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 3.8em;
+
+      @media screen and (max-width: 1180px) {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .nav-links {
+    clear: both;
+    margin-bottom: 120px;
+
+
+    .page-numbers {
+      display: inline-block;
+      margin: 5px;
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      line-height: 2em;
+      border: 1px solid transparent;
+
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.next,
+      &.prev {
+        top: 3px; // yes, I know :(
+        position: relative;
+
+        &:hover {
+          border-color: transparent;
+        }
+      }
+
+      &.current {
+        background-color: $gold-dark;
+        color: $white;
+      }
+    }
+  }
+
+  .insights_visit_presspage_cont {
+    display: flex;
+    align-items: center;
+    padding: 60px 62px;
+    background: #bf933d;
+    color: $white;
+    position: relative; //for bg icon
+    overflow: hidden; //for bg icon
+
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25%;
+      height: 100%;
+      background: $gold-dark;
+      z-index: 1; // check z-index behavior o_0
+    }
+
+    .icon-Symbol---Gold {
+      font-size: 1600px; // :) we should to check a performance this idea
+      position: absolute;
+      top: -700px;
+      left: -545px;
+      z-index: 2;
+
+      &:before {
+        color: $gold-dark;
+      }
+    }
+
+    .insight_visit_presspage_text {
+      flex: 1;
+      margin: 0 0 25px;
+
+      font-weight: 400;
+      position: relative; //for bg icon
+      z-index: 3;
+      text-align: center;
+    }
+
+    .insight_visit_press_page_cta {
+      background: $black-light;
+      padding: 16px 30px 20px;
+      height: 60px; //flex item
+      color: $white;
+      position: relative; //for bg icon
+      z-index: 3;
+
+      &:hover {
+        background: $black;
+        text-decoration: none;
+      }
+
+      i {
+        margin-left: 20px;
+        position: relative;
+        top: 3px; //should be refactored
+      }
+    }
+  }
+
+  .insights_subscribe_form {
+    width: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 1080px) {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+    }
+
+    .gform_wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0 40px 0 0;
+
+      .gform_heading {
+        display: none;
+      }
+
+      ul li.gfield {
+        margin-bottom: 0;
+      }
+    }
+
+    .gform_confirmation_wrapper {
+      padding: 40px 0;
+    }
+
+    .wFormContainer {
+      .wForm form {
+        .group {
+          margin: 0;
+        }
+
+        .oneField {
+          @include media(xmsd) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .supportInfo {
+        display: none;
+      }
+    }
+
+    input {
+      background: transparent;
+    }
+  }
+
+  .archive.category,
+  .archive.tag,
+  .archive.tax-news_category,
+  .archive.tax-news_tag {
+    h1 {
+      margin-top: 0;
+      color: $black;
+    }
+
+    .nav-links {
+      margin-bottom: 60px;
+    }
+
+    .archive_insights_and_subscribe .archive_insight_cont {
+      @media screen and (max-width: 980px) {
+        flex: 0 0 48%;
+        margin-bottom: 60px;
+      }
+
+      @media screen and (max-width: 580px) {
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .realty-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    #realty-loader {
+      border: 1px solid $black-light;
+      display: flex;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+}
